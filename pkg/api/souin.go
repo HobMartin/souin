@@ -95,7 +95,7 @@ func (s *SouinAPI) BulkDelete(key string, purge bool) {
 // Delete will delete a record into the provider cache system and will update the Souin API if enabled
 func (s *SouinAPI) Delete(key string) {
 	for _, current := range s.storers {
-		current.Delete(key)
+		current.DeleteMany(key)
 	}
 }
 
