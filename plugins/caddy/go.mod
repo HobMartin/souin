@@ -1,11 +1,11 @@
-module github.com/darkweak/souin/plugins/caddy
+module github.com/HobMartin/souin/plugins/caddy
 
 go 1.21
 
 require (
 	github.com/buraksezer/olric v0.5.4
 	github.com/caddyserver/caddy/v2 v2.7.6
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 	go.uber.org/zap v1.26.0
 )
 

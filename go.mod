@@ -1,4 +1,4 @@
-module github.com/darkweak/souin
+module github.com/HobMartin/souin
 
 go 1.21
 
