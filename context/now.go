@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
+	"github.com/HobMartin/souin/configurationtypes"
 )
 
 const Now ctxKey = "souin_ctx.NOW"

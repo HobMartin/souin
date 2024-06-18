@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/darkweak/souin/configurationtypes"
+	"github.com/HobMartin/souin/configurationtypes"
 	"go.uber.org/zap"
 	yaml "gopkg.in/yaml.v3"
 )

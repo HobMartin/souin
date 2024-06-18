@@ -1,9 +1,9 @@
-module github.com/darkweak/souin/plugins/chi
+module github.com/HobMartin/souin/plugins/chi
 
 go 1.21
 
 require (
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 	github.com/go-chi/chi/v5 v5.0.10
 )
 
@@ -162,4 +162,4 @@ require (
 	howett.net/plist v1.0.0 // indirect
 )
 
-replace github.com/darkweak/souin v1.6.48 => ../..
+replace github.com/HobMartin/souin v1.6.48 => ../..

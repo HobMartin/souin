@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/darkweak/souin/errors"
-	"github.com/darkweak/souin/tests"
+	"github.com/HobMartin/souin/errors"
+	"github.com/HobMartin/souin/tests"
 )
 
 func TestInitProviders(t *testing.T) {

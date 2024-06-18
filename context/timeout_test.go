@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/plugins/souin/configuration"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/plugins/souin/configuration"
 	"go.uber.org/zap"
 )
 

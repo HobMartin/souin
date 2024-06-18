@@ -123,23 +123,23 @@ github.com/cpuguy83/go-md2man/v2/md2man
 # github.com/darkweak/go-esi v0.0.5
 ## explicit; go 1.18
 github.com/darkweak/go-esi/esi
-# github.com/darkweak/souin v1.6.48 => ../..
+# github.com/HobMartin/souin v1.6.48 => ../..
 ## explicit; go 1.21
-github.com/darkweak/souin/configurationtypes
-github.com/darkweak/souin/context
-github.com/darkweak/souin/errors
-github.com/darkweak/souin/helpers
-github.com/darkweak/souin/pkg/api
-github.com/darkweak/souin/pkg/api/debug
-github.com/darkweak/souin/pkg/api/prometheus
-github.com/darkweak/souin/pkg/middleware
-github.com/darkweak/souin/pkg/rfc
-github.com/darkweak/souin/pkg/storage
-github.com/darkweak/souin/pkg/storage/types
-github.com/darkweak/souin/pkg/surrogate
-github.com/darkweak/souin/pkg/surrogate/providers
-github.com/darkweak/souin/plugins/souin/configuration
-github.com/darkweak/souin/tests
+github.com/HobMartin/souin/configurationtypes
+github.com/HobMartin/souin/context
+github.com/HobMartin/souin/errors
+github.com/HobMartin/souin/helpers
+github.com/HobMartin/souin/pkg/api
+github.com/HobMartin/souin/pkg/api/debug
+github.com/HobMartin/souin/pkg/api/prometheus
+github.com/HobMartin/souin/pkg/middleware
+github.com/HobMartin/souin/pkg/rfc
+github.com/HobMartin/souin/pkg/storage
+github.com/HobMartin/souin/pkg/storage/types
+github.com/HobMartin/souin/pkg/surrogate
+github.com/HobMartin/souin/pkg/surrogate/providers
+github.com/HobMartin/souin/plugins/souin/configuration
+github.com/HobMartin/souin/tests
 # github.com/dgraph-io/badger v1.6.2
 ## explicit; go 1.12
 github.com/dgraph-io/badger

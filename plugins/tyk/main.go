@@ -12,10 +12,10 @@ import (
 
 	"github.com/TykTechnologies/tyk/ctx"
 	"github.com/cespare/xxhash/v2"
-	"github.com/darkweak/souin/context"
-	"github.com/darkweak/souin/pkg/middleware"
-	"github.com/darkweak/souin/pkg/rfc"
-	"github.com/darkweak/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/context"
+	"github.com/HobMartin/souin/pkg/middleware"
+	"github.com/HobMartin/souin/pkg/rfc"
+	"github.com/HobMartin/souin/pkg/storage/types"
 	"github.com/pquerna/cachecontrol/cacheobject"
 )
 

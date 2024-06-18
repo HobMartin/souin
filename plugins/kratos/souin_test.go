@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/middleware"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/middleware"
 )
 
 var devDefaultConfiguration = middleware.BaseConfiguration{

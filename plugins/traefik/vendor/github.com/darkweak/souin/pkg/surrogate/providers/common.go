@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/storage"
-	"github.com/darkweak/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/storage"
+	"github.com/HobMartin/souin/pkg/storage/types"
 )
 
 const (

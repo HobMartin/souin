@@ -1,9 +1,9 @@
-module github.com/darkweak/souin/plugins/echo
+module github.com/HobMartin/souin/plugins/echo
 
 go 1.21
 
 require (
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 	github.com/labstack/echo/v4 v4.11.1
 )
 
@@ -165,4 +165,4 @@ require (
 	howett.net/plist v1.0.0 // indirect
 )
 
-replace github.com/darkweak/souin v1.6.48 => ../..
+replace github.com/HobMartin/souin v1.6.48 => ../..

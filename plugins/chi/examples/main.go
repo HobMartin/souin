@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	cache "github.com/darkweak/souin/plugins/chi"
+	cache "github.com/HobMartin/souin/plugins/chi"
 	"github.com/go-chi/chi/v5"
 )
 

@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	souin_echo "github.com/darkweak/souin/plugins/echo"
+	souin_echo "github.com/HobMartin/souin/plugins/echo"
 	"github.com/labstack/echo/v4"
 )
 

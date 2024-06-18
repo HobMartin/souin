@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/rfc"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/rfc"
 )
 
 type Storer interface {

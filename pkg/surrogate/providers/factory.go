@@ -1,7 +1,7 @@
 package providers
 
 import (
-	"github.com/darkweak/souin/configurationtypes"
+	"github.com/HobMartin/souin/configurationtypes"
 )
 
 // SurrogateFactory generate a SurrogateInterface instance

@@ -53,7 +53,7 @@ jobs:
         run: go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
       -
         name: Build Souin as caddy module
-        run: cd plugins/caddy && xcaddy build --with github.com/darkweak/souin/plugins/caddy=./ --with github.com/darkweak/souin@latest=../..
+        run: cd plugins/caddy && xcaddy build --with github.com/HobMartin/souin/plugins/caddy=./ --with github.com/HobMartin/souin@latest=../..
       -
         name: Run Caddy tests
         run: cd plugins/caddy && go test -v ./...
@@ -108,7 +108,7 @@ jobs:
         name: Checkout Souin code
         uses: actions/checkout@v4
         with:
-          repository: darkweak/souin
+          repository: HobMartin/souin
           path: souin
       -
         name: Checkout cache-tests code
@@ -121,7 +121,7 @@ jobs:
         run: go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
       -
         name: Build Souin as caddy module for current commit
-        run: cd souin/plugins/caddy && xcaddy build --with github.com/darkweak/souin/plugins/caddy=./ --with github.com/darkweak/souin=../..
+        run: cd souin/plugins/caddy && xcaddy build --with github.com/HobMartin/souin/plugins/caddy=./ --with github.com/HobMartin/souin=../..
       -
         name: Run detached caddy
         run: cd souin/plugins/caddy && ./caddy run --config ../../docs/cache-tests/cache-tests-caddyfile --adapter caddyfile &

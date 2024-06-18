@@ -3,8 +3,8 @@ package storage
 import (
 	"testing"
 
-	"github.com/darkweak/souin/errors"
-	"github.com/darkweak/souin/tests"
+	"github.com/HobMartin/souin/errors"
+	"github.com/HobMartin/souin/tests"
 )
 
 func TestInitializeProvider(t *testing.T) {

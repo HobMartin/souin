@@ -1,9 +1,9 @@
-module github.com/darkweak/souin/plugins/roadrunner
+module github.com/HobMartin/souin/plugins/roadrunner
 
 go 1.21
 
 require (
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 	github.com/roadrunner-server/errors v1.3.0
 	go.uber.org/zap v1.26.0
 	gopkg.in/yaml.v3 v3.0.1
@@ -162,4 +162,4 @@ require (
 	howett.net/plist v1.0.0 // indirect
 )
 
-replace github.com/darkweak/souin v1.6.48 => ../..
+replace github.com/HobMartin/souin v1.6.48 => ../..

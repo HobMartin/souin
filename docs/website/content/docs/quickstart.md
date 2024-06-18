@@ -24,7 +24,7 @@ x-networks: &networks
 
 services:
   souin:
-    image: darkweak/souin:latest
+    image: HobMartin/souin:latest
     ports:
       - 80:80
       - 443:443
@@ -57,7 +57,7 @@ reverse_proxy_url: 'http://traefik' # If it's in the same network you can use ht
 ## From source
 If you want to run the Souin standalone server from sources, you should clone the Souin repository and run the golang standalone server.
 ```bash
-git clone https://github.com/darkweak/souin
+git clone https://github.com/HobMartin/souin
 cd souin/plugins/souin
 ```
 

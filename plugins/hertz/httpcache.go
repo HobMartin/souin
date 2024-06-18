@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/middleware"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/middleware"
 
 	"github.com/cloudwego/hertz/pkg/app"
 )

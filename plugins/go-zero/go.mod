@@ -1,9 +1,9 @@
-module github.com/darkweak/souin/plugins/go-zero
+module github.com/HobMartin/souin/plugins/go-zero
 
 go 1.21
 
 require (
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 	github.com/zeromicro/go-zero v1.6.2
 )
 
@@ -183,4 +183,4 @@ require (
 	howett.net/plist v1.0.0 // indirect
 )
 
-replace github.com/darkweak/souin v1.6.48 => ../..
+replace github.com/HobMartin/souin v1.6.48 => ../..

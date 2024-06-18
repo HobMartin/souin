@@ -3,10 +3,10 @@ package httpcache
 import (
 	"errors"
 
+	"github.com/HobMartin/souin/configurationtypes"
 	"github.com/caddyserver/caddy/v2"
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/storage/types"
-	"github.com/darkweak/souin/pkg/surrogate/providers"
+	"github.com/HobMartin/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/pkg/surrogate/providers"
 )
 
 // SouinApp contains the whole Souin necessary items

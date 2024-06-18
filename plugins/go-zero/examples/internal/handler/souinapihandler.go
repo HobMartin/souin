@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"github.com/darkweak/souin/plugins/go-zero/examples/internal/logic"
-	"github.com/darkweak/souin/plugins/go-zero/examples/internal/svc"
-	"github.com/darkweak/souin/plugins/go-zero/examples/internal/types"
+	"github.com/HobMartin/souin/plugins/go-zero/examples/internal/logic"
+	"github.com/HobMartin/souin/plugins/go-zero/examples/internal/svc"
+	"github.com/HobMartin/souin/plugins/go-zero/examples/internal/types"
 	"github.com/zeromicro/go-zero/rest/httpx"
 )
 

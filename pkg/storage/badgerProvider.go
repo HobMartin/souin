@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	t "github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/rfc"
-	"github.com/darkweak/souin/pkg/storage/types"
+	t "github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/rfc"
+	"github.com/HobMartin/souin/pkg/storage/types"
 	badger "github.com/dgraph-io/badger/v3"
 	"github.com/imdario/mergo"
 	lz4 "github.com/pierrec/lz4/v4"

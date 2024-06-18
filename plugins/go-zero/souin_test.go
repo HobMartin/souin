@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/darkweak/souin/pkg/middleware"
+	"github.com/HobMartin/souin/pkg/middleware"
 )
 
 func Test_NewHTTPCache(t *testing.T) {

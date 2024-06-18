@@ -1,4 +1,4 @@
-![Souin logo](https://github.com/darkweak/souin/blob/master/docs/img/logo.svg)
+![Souin logo](https://github.com/HobMartin/souin/blob/master/docs/img/logo.svg)
 
 # Souin Table of Contents
 1. [Souin reverse-proxy cache description](#project-description)
@@ -261,7 +261,7 @@ The base path for the prometheus API is `/metrics`.
 ### Souin API
 Souin API allow users to manage the cache.  
 The base path for the souin API is `/souin`.  
-The Souin API supports the invalidation by surrogate keys such as Fastly which will replace the Varnish system. You can read the doc [about this system](https://github.com/darkweak/souin/blob/master/pkg/surrogate/README.md).
+The Souin API supports the invalidation by surrogate keys such as Fastly which will replace the Varnish system. You can read the doc [about this system](https://github.com/HobMartin/souin/blob/master/pkg/surrogate/README.md).
 This system is able to invalidate by tags your cloud provider cache. Actually it supports Akamai and Fastly but in a near future some other providers would be implemented like Cloudflare or Varnish.
 
 | Method  | Endpoint          | Headers                                                    | Description                                                                                                                                                                         |
@@ -270,7 +270,7 @@ This system is able to invalidate by tags your cloud provider cache. Actually it
 | `GET`   | `/surrogate_keys` | -                                                          | List stored keys cache                                                                                                                                                              |
 | `PURGE` | `/{id or regexp}` | -                                                          | Purge selected item(s) depending. The parameter can be either a specific key or a regexp                                                                                            |
 | `PURGE` | `/?ykey={key}`    | -                                                          | Purge selected item(s) corresponding to the target ykey such as Varnish (deprecated)                                                                                                |
-| `PURGE` | `/`               | `Surrogate-Key: Surrogate-Key-First, Surrogate-Key-Second` | Purge selected item(s) belong to the target key in the header `Surrogate-Key` (see [Surrogate-Key system](https://github.com/darkweak/souin/blob/master/cache/surrogate/README.md)) |
+| `PURGE` | `/`               | `Surrogate-Key: Surrogate-Key-First, Surrogate-Key-Second` | Purge selected item(s) belong to the target key in the header `Surrogate-Key` (see [Surrogate-Key system](https://github.com/HobMartin/souin/blob/master/cache/surrogate/README.md)) |
 | `PURGE` | `/flush`          | -                                                          | Purge all providers and surrogate storages                                                                                                                                          |
 
 ### Security API
@@ -287,7 +287,7 @@ The base path for the security API is `/authentication`.
 
 ### Sequence diagram
 See the sequence diagram for the minimal version below
-![Sequence diagram](https://github.com/darkweak/souin/blob/master/docs/plantUML/sequenceDiagram.svg?sanitize=true)
+![Sequence diagram](https://github.com/HobMartin/souin/blob/master/docs/plantUML/sequenceDiagram.svg?sanitize=true)
 
 ## Cache systems
 Supported providers
@@ -406,7 +406,7 @@ x-networks: &networks
 
 services:
   souin:
-    image: darkweak/souin:latest
+    image: HobMartin/souin:latest
     ports:
       - 80:80
       - 443:443
@@ -425,13 +425,13 @@ networks:
 ## Plugins
 
 ### Beego filter
-To use Souin as beego filter, you can refer to the [Beego filter integration folder](https://github.com/darkweak/souin/tree/master/plugins/beego) to discover how to configure it.  
+To use Souin as beego filter, you can refer to the [Beego filter integration folder](https://github.com/HobMartin/souin/tree/master/plugins/beego) to discover how to configure it.  
 You just have to define a new beego router and tell to the instance to use the `Handle` method like below:
 ```go
 import (
 	"net/http"
 
-	httpcache "github.com/darkweak/souin/plugins/beego"
+	httpcache "github.com/HobMartin/souin/plugins/beego"
 )
 
 func main(){
@@ -444,11 +444,11 @@ func main(){
 ```
 
 ### Caddy module
-To use Souin as caddy module, you can refer to the [Caddy module integration folder](https://github.com/darkweak/souin/tree/master/plugins/caddy) to discover how to configure it.  
-The related Caddyfile can be found [here](https://github.com/darkweak/souin/tree/master/plugins/caddy/Caddyfile).  
+To use Souin as caddy module, you can refer to the [Caddy module integration folder](https://github.com/HobMartin/souin/tree/master/plugins/caddy) to discover how to configure it.  
+The related Caddyfile can be found [here](https://github.com/HobMartin/souin/tree/master/plugins/caddy/Caddyfile).  
 Then you just have to run the following command:
 ```bash
-xcaddy build --with github.com/darkweak/souin/plugins/caddy
+xcaddy build --with github.com/HobMartin/souin/plugins/caddy
 ```
 
 There is the fully configuration below
@@ -632,13 +632,13 @@ cache @souin-api {}
 ```
 
 ### Chi middleware
-To use Souin as chi middleware, you can refer to the [Chi middleware integration folder](https://github.com/darkweak/souin/tree/master/plugins/chi) to discover how to configure it.  
+To use Souin as chi middleware, you can refer to the [Chi middleware integration folder](https://github.com/HobMartin/souin/tree/master/plugins/chi) to discover how to configure it.  
 You just have to define a new chi router and tell to the instance to use the `Handle` method like below:
 ```go
 import (
 	"net/http"
 
-	cache "github.com/darkweak/souin/plugins/chi"
+	cache "github.com/HobMartin/souin/plugins/chi"
 	"github.com/go-chi/chi/v5"
 )
 
@@ -655,11 +655,11 @@ func main(){
 ```
 
 ### Dotweb middleware
-To use Souin as dotweb middleware, you can refer to the [Dotweb plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/dotweb) to discover how to configure it.  
+To use Souin as dotweb middleware, you can refer to the [Dotweb plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/dotweb) to discover how to configure it.  
 You just have to define a new dotweb router and tell to the instance to use the process method like below:
 ```go
 import (
-	cache "github.com/darkweak/souin/plugins/dotweb"
+	cache "github.com/HobMartin/souin/plugins/dotweb"
 	"github.com/go-dotweb/dotweb/v5"
 )
 
@@ -676,13 +676,13 @@ func main(){
 ```
 
 ### Echo middleware
-To use Souin as echo middleware, you can refer to the [Echo plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/echo) to discover how to configure it.  
+To use Souin as echo middleware, you can refer to the [Echo plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/echo) to discover how to configure it.  
 You just have to define a new echo router and tell to the instance to use the process method like below:
 ```go
 import (
 	"net/http"
 
-	souin_echo "github.com/darkweak/souin/plugins/echo"
+	souin_echo "github.com/HobMartin/souin/plugins/echo"
 	"github.com/labstack/echo/v4"
 )
 
@@ -698,11 +698,11 @@ func main(){
 ```
 
 ### Fiber middleware
-To use Souin as fiber middleware, you can refer to the [Fiber plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/fiber) to discover how to configure it.  
+To use Souin as fiber middleware, you can refer to the [Fiber plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/fiber) to discover how to configure it.  
 You just have to define a new fiber router and tell to the instance to use the process method like below:
 ```go
 import (
-	cache "github.com/darkweak/souin/plugins/fiber"
+	cache "github.com/HobMartin/souin/plugins/fiber"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -717,13 +717,13 @@ func main(){
 ```
 
 ### Gin middleware
-To use Souin as gin middleware, you can refer to the [Gin plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/gin) to discover how to configure it.  
+To use Souin as gin middleware, you can refer to the [Gin plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/gin) to discover how to configure it.  
 You just have to define a new gin router and tell to the instance to use the process method like below:
 ```go
 import (
 	"net/http"
 
-	souin_gin "github.com/darkweak/souin/plugins/gin"
+	souin_gin "github.com/HobMartin/souin/plugins/gin"
 	"github.com/gin-gonic/gin"
 )
 
@@ -739,13 +739,13 @@ func main(){
 ```
 
 ### Go-zero middleware
-To use Souin as go-zero middleware, you can refer to the [Go-zero plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/go-zero) to discover how to configure it.  
+To use Souin as go-zero middleware, you can refer to the [Go-zero plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/go-zero) to discover how to configure it.  
 You just have to give a Condfiguration object to the `NewHTTPCache` method to get a new HTTP cache instance and use the Handle method as a GlobalMiddleware:
 ```go
 import (
 	"net/http"
 
-	cache "github.com/darkweak/souin/plugins/go-zero"
+	cache "github.com/HobMartin/souin/plugins/go-zero"
 )
 
 func main(){
@@ -759,13 +759,13 @@ func main(){
 ```
 
 ### Goa middleware
-To use Souin as goa middleware, you can refer to the [Goa plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/goa) to discover how to configure it.  
+To use Souin as goa middleware, you can refer to the [Goa plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/goa) to discover how to configure it.  
 You just have to start Goa, define a new goa router and tell to the router instance to use the Handle method as GlobalMiddleware like below:
 ```go
 import (
 	"net/http"
 
-	httpcache "github.com/darkweak/souin/plugins/goa"
+	httpcache "github.com/HobMartin/souin/plugins/goa"
 	goahttp "goa.design/goa/v3/http"
 )
 
@@ -780,13 +780,13 @@ func main(){
 ```
 
 ### Goyave middleware
-To use Souin as goyave middleware, you can refer to the [Goyave plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/goyave) to discover how to configure it.  
+To use Souin as goyave middleware, you can refer to the [Goyave plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/goyave) to discover how to configure it.  
 You just have to start Goyave, define a new goyave router and tell to the router instance to use the Handle method as GlobalMiddleware like below:
 ```go
 import (
 	"net/http"
 
-	cache "github.com/darkweak/souin/plugins/goyave"
+	cache "github.com/HobMartin/souin/plugins/goyave"
 	"goyave.dev/goyave/v4"
 )
 
@@ -800,7 +800,7 @@ func main() {
 ```
 
 ### Hertz middleware
-To use Souin as hertz middleware, you can refer to the [Hertz middleware integration folder](https://github.com/darkweak/souin/tree/master/plugins/hertz) to discover how to configure it.  
+To use Souin as hertz middleware, you can refer to the [Hertz middleware integration folder](https://github.com/HobMartin/souin/tree/master/plugins/hertz) to discover how to configure it.  
 You just have to use the `NewHTTPCache` method like below:
 ```go
 import (
@@ -808,7 +808,7 @@ import (
 	"net/http"
 
 	// ...
-	httpcache "github.com/darkweak/souin/plugins/hertz"
+	httpcache "github.com/HobMartin/souin/plugins/hertz"
 )
 
 func main() {
@@ -819,11 +819,11 @@ func main() {
 ```
 
 ### Kratos filter
-To use Souin as Kratos filter, you can refer to the [Kratos plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/kratos) to discover how to configure it.  
+To use Souin as Kratos filter, you can refer to the [Kratos plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/kratos) to discover how to configure it.  
 You just have to start the Kratos HTTP server with the Souin filter like below:
 ```go
 import (
-	httpcache "github.com/darkweak/souin/plugins/kratos"
+	httpcache "github.com/HobMartin/souin/plugins/kratos"
 	kratos_http "github.com/go-kratos/kratos/v2/transport/http"
 )
 
@@ -853,7 +853,7 @@ httpcache:
 After that you have to edit your server instanciation to use the HTTP cache configuration parser
 ```go
 import (
-	httpcache "github.com/darkweak/souin/plugins/kratos"
+	httpcache "github.com/HobMartin/souin/plugins/kratos"
 	kratos_http "github.com/go-kratos/kratos/v2/transport/http"
 )
 
@@ -878,7 +878,7 @@ func main() {
 ```
 
 ### Roadrunner middleware
-To use Souin as Roadrunner middleware, you can refer to the [Roadrunner plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/roadrunner) to discover how to configure it.  
+To use Souin as Roadrunner middleware, you can refer to the [Roadrunner plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/roadrunner) to discover how to configure it.  
 Ysou have to build your `rr` binary with the souin dependency.
 ```toml
 [velox]
@@ -951,13 +951,13 @@ http:
 
 
 ### Skipper filter
-To use Souin as skipper filter, you can refer to the [Skipper plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/skipper) to discover how to configure it.  
+To use Souin as skipper filter, you can refer to the [Skipper plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/skipper) to discover how to configure it.  
 You just have to add to your Skipper instance the Souin filter like below:
 ```go
 package main
 
 import (
-	souin_skipper "github.com/darkweak/souin/plugins/skipper"
+	souin_skipper "github.com/HobMartin/souin/plugins/skipper"
 	"github.com/zalando/skipper"
 	"github.com/zalando/skipper/filters"
 )
@@ -979,14 +979,14 @@ hello: Path("/hello")
 ```
 
 ### Træfik plugin
-To use Souin as Træfik plugin, you can refer to the [pilot documentation](https://pilot.traefik.io/plugins/6123af58d00e6cd1260b290e/souin) and the [Træfik plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/traefik) to discover how to configure it.  
+To use Souin as Træfik plugin, you can refer to the [pilot documentation](https://pilot.traefik.io/plugins/6123af58d00e6cd1260b290e/souin) and the [Træfik plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/traefik) to discover how to configure it.  
 You have to declare the `experimental` block in your traefik static configuration file. Keep in mind Træfik run their own interpreter and they often break any dependances (such as the yaml.v3 support).
 ```yaml
 # anywhere/traefik.yml
 experimental:
   plugins:
     souin:
-      moduleName: github.com/darkweak/souin
+      moduleName: github.com/HobMartin/souin
       version: v1.6.48
 ```
 After that you can declare either the whole configuration at once in the middleware block or by service. See the examples below.
@@ -1056,8 +1056,8 @@ services:
 ```
 
 ### Tyk plugin
-To use Souin as a Tyk plugin, you can refer to the [Tyk plugin integration folder](https://github.com/darkweak/souin/tree/master/plugins/tyk) to discover how to configure it.  
-You have to define the use of Souin as `post` and `response` custom middleware. You can compile your own Souin integration using the `Makefile` and the `docker-compose` inside the [tyk integration directory](https://github.com/darkweak/souin/tree/master/plugins/tyk) and place your generated `souin-plugin.so` file inside your `middleware` directory.
+To use Souin as a Tyk plugin, you can refer to the [Tyk plugin integration folder](https://github.com/HobMartin/souin/tree/master/plugins/tyk) to discover how to configure it.  
+You have to define the use of Souin as `post` and `response` custom middleware. You can compile your own Souin integration using the `Makefile` and the `docker-compose` inside the [tyk integration directory](https://github.com/HobMartin/souin/tree/master/plugins/tyk) and place your generated `souin-plugin.so` file inside your `middleware` directory.
 ```json
 {
   "name":"httpbin.org",
@@ -1127,14 +1127,14 @@ You have to define the use of Souin as `post` and `response` custom middleware. 
 ```
 
 ### Webgo middleware
-To use Souin as webgo middleware, you can refer to the [Webgo middleware integration folder](https://github.com/darkweak/souin/tree/master/plugins/webgo) to discover how to configure it.  
+To use Souin as webgo middleware, you can refer to the [Webgo middleware integration folder](https://github.com/HobMartin/souin/tree/master/plugins/webgo) to discover how to configure it.  
 You just have to define a new webgo router and tell to the instance to use the process method like below:
 ```go
 import (
 	"net/http"
 
 	"github.com/bnkamalesh/webgo/v6"
-	cache "github.com/darkweak/souin/plugins/webgo"
+	cache "github.com/HobMartin/souin/plugins/webgo"
 )
 
 func main(){

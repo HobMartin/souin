@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/storage"
-	"github.com/darkweak/souin/pkg/storage/types"
-	"github.com/darkweak/souin/pkg/surrogate/providers"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/storage"
+	"github.com/HobMartin/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/pkg/surrogate/providers"
 )
 
 // SouinAPI object contains informations related to the endpoints

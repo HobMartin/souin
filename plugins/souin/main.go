@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/darkweak/souin/errors"
-	"github.com/darkweak/souin/pkg/middleware"
-	"github.com/darkweak/souin/plugins/souin/configuration"
-	"github.com/darkweak/souin/plugins/souin/providers"
+	"github.com/HobMartin/souin/errors"
+	"github.com/HobMartin/souin/pkg/middleware"
+	"github.com/HobMartin/souin/plugins/souin/configuration"
+	"github.com/HobMartin/souin/plugins/souin/providers"
 )
 
 func startServer(config *tls.Config, port string) (net.Listener, *http.Server) {

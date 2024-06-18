@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/storage/types"
 )
 
 const (

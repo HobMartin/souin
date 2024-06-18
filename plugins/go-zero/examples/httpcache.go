@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/darkweak/souin/plugins/go-zero/examples/internal/config"
-	"github.com/darkweak/souin/plugins/go-zero/examples/internal/handler"
-	"github.com/darkweak/souin/plugins/go-zero/examples/internal/svc"
+	"github.com/HobMartin/souin/plugins/go-zero/examples/internal/config"
+	"github.com/HobMartin/souin/plugins/go-zero/examples/internal/handler"
+	"github.com/HobMartin/souin/plugins/go-zero/examples/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

@@ -3,7 +3,7 @@ package kratos
 import (
 	"net/http"
 
-	"github.com/darkweak/souin/pkg/middleware"
+	"github.com/HobMartin/souin/pkg/middleware"
 	kratos_http "github.com/go-kratos/kratos/v2/transport/http"
 )
 

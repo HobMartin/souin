@@ -1,10 +1,10 @@
-module github.com/darkweak/souin/plugins/traefik
+module github.com/HobMartin/souin/plugins/traefik
 
 go 1.21
 
 require (
 	github.com/akyoto/cache v1.0.6
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 	github.com/pquerna/cachecontrol v0.2.0
 )
 
@@ -167,6 +167,6 @@ require (
 )
 
 replace (
-	github.com/darkweak/souin v1.6.48 => ../..
+	github.com/HobMartin/souin v1.6.48 => ../..
 	go.uber.org/zap v1.26.0 => go.uber.org/zap v1.21.0
 )

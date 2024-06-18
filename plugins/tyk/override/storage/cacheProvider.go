@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	t "github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/rfc"
-	"github.com/darkweak/souin/pkg/storage/types"
+	t "github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/rfc"
+	"github.com/HobMartin/souin/pkg/storage/types"
 	"github.com/patrickmn/go-cache"
 	"go.uber.org/zap"
 )

@@ -38,7 +38,7 @@ jobs:
           push: true
           file: ./plugins/traefik/Dockerfile.deploy
           platforms: linux/amd64,linux/arm/v7,linux/arm64/v8
-          tags: darkweak/souin-traefik:${{ env.RELEASE_VERSION }}
+          tags: HobMartin/souin-traefik:${{ env.RELEASE_VERSION }}
   generate-souin-docker:
     name: Generate souin docker
     runs-on: ubuntu-latest
@@ -72,8 +72,8 @@ jobs:
           build-args: |
             "GO_VERSION=${{ env.GO_VERSION }}"
           tags: |
-            darkweak/souin:latest
-            darkweak/souin:${{ env.RELEASE_VERSION }}
+            HobMartin/souin:latest
+            HobMartin/souin:${{ env.RELEASE_VERSION }}
   generate-artifacts:
     name: Deploy to goreleaser
     runs-on: ubuntu-latest

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/darkweak/souin/pkg/middleware"
+	"github.com/HobMartin/souin/pkg/middleware"
 	"github.com/zalando/skipper/filters"
 )
 

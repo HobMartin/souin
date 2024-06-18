@@ -7,9 +7,9 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/storage/types"
-	"github.com/darkweak/souin/plugins/souin/configuration"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/plugins/souin/configuration"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

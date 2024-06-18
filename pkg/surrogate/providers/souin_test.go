@@ -5,10 +5,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/errors"
-	"github.com/darkweak/souin/pkg/storage"
-	"github.com/darkweak/souin/tests"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/errors"
+	"github.com/HobMartin/souin/pkg/storage"
+	"github.com/HobMartin/souin/tests"
 	"go.uber.org/zap"
 )
 

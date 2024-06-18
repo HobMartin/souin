@@ -7,19 +7,19 @@ RUN apk update && apk upgrade && \
 ENV GOPATH /app
 
 RUN mkdir -p /app/src/github.com/darkweak/cmd
-RUN mkdir -p /app/src/github.com/darkweak/souin
-ADD ./go.* /app/src/github.com/darkweak/souin/
+RUN mkdir -p /app/src/github.com/HobMartin/souin
+ADD ./go.* /app/src/github.com/HobMartin/souin/
 RUN mkdir -p /ssl
-ADD ./context /app/src/github.com/darkweak/souin/context
-ADD ./pkg /app/src/github.com/darkweak/souin/pkg
-ADD ./tests /app/src/github.com/darkweak/souin/tests
-ADD ./configuration /app/src/github.com/darkweak/souin/configuration
-ADD ./configurationtypes /app/src/github.com/darkweak/souin/configurationtypes
-ADD ./errors /app/src/github.com/darkweak/souin/errors
-ADD ./helpers /app/src/github.com/darkweak/souin/helpers
-ADD ./plugins /app/src/github.com/darkweak/souin/plugins
+ADD ./context /app/src/github.com/HobMartin/souin/context
+ADD ./pkg /app/src/github.com/HobMartin/souin/pkg
+ADD ./tests /app/src/github.com/HobMartin/souin/tests
+ADD ./configuration /app/src/github.com/HobMartin/souin/configuration
+ADD ./configurationtypes /app/src/github.com/HobMartin/souin/configurationtypes
+ADD ./errors /app/src/github.com/HobMartin/souin/errors
+ADD ./helpers /app/src/github.com/HobMartin/souin/helpers
+ADD ./plugins /app/src/github.com/HobMartin/souin/plugins
 
-WORKDIR /app/src/github.com/darkweak/souin
+WORKDIR /app/src/github.com/HobMartin/souin
 RUN go mod download
 
 RUN CGO_ENABLED=0 go build -a \
@@ -30,9 +30,9 @@ EXPOSE 80
 FROM alpine:latest AS souin
 
 COPY --from=builder /app/cmd/souin .
-COPY --from=builder /app/src/github.com/darkweak/souin/configuration .
+COPY --from=builder /app/src/github.com/HobMartin/souin/configuration .
 RUN mkdir -p /ssl
-COPY --from=builder /app/src/github.com/darkweak/souin/plugins/souin/default .
+COPY --from=builder /app/src/github.com/HobMartin/souin/plugins/souin/default .
 RUN mkdir -p configuration
 RUN mv *.yml configuration/
 RUN mkdir -p default

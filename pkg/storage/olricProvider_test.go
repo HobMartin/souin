@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/darkweak/souin/pkg/storage/types"
-	"github.com/darkweak/souin/tests"
+	"github.com/HobMartin/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/tests"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/errors"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/errors"
 )
 
 func getOlricClientAndMatchedURL(key string) (types.Storer, configurationtypes.URL) {

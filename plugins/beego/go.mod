@@ -1,10 +1,10 @@
-module github.com/darkweak/souin/plugins/beego
+module github.com/HobMartin/souin/plugins/beego
 
 go 1.21
 
 require (
 	github.com/beego/beego/v2 v2.1.1
-	github.com/darkweak/souin v1.6.48
+	github.com/HobMartin/souin v1.6.48
 )
 
 require (
@@ -165,4 +165,4 @@ require (
 	howett.net/plist v1.0.0 // indirect
 )
 
-replace github.com/darkweak/souin v1.6.48 => ../..
+replace github.com/HobMartin/souin v1.6.48 => ../..

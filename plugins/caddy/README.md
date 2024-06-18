@@ -2,7 +2,7 @@ Caddy Module: http.handlers.cache
 ================================
 
 Development repository of the caddy cache-handler module.  
-This is a distributed HTTP cache module for Caddy based on [Souin](https://github.com/darkweak/souin) cache.  
+This is a distributed HTTP cache module for Caddy based on [Souin](https://github.com/HobMartin/souin) cache.  
 
 ## Features
 
@@ -413,4 +413,4 @@ What does these directives mean?
 Other resources
 ---------------
 You can find an example for the [Caddyfile](Caddyfile) or the [JSON file](configuration.json).  
-See the [Souin](https://github.com/darkweak/souin) configuration for the full configuration, and its associated [Caddyfile](https://github.com/darkweak/souin/blob/master/plugins/caddy/Caddyfile)  
+See the [Souin](https://github.com/HobMartin/souin) configuration for the full configuration, and its associated [Caddyfile](https://github.com/HobMartin/souin/blob/master/plugins/caddy/Caddyfile)  

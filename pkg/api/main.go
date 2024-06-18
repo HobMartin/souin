@@ -3,11 +3,11 @@ package api
 import (
 	"net/http"
 
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/api/debug"
-	"github.com/darkweak/souin/pkg/api/prometheus"
-	"github.com/darkweak/souin/pkg/storage/types"
-	"github.com/darkweak/souin/pkg/surrogate/providers"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/api/debug"
+	"github.com/HobMartin/souin/pkg/api/prometheus"
+	"github.com/HobMartin/souin/pkg/storage/types"
+	"github.com/HobMartin/souin/pkg/surrogate/providers"
 )
 
 // MapHandler is a map to store the available http Handlers

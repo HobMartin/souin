@@ -8,7 +8,7 @@ tags = ["Beginners", "Advanced"]
 
 ## Disclaimer
 {{% alert icon=" " %}}
-`github.com/darkweak/souin/plugin/caddy` and `github.com/caddyserver/cache-handler` are mainly the same but the `souin/plugin/caddy` is the development repository and the `cache-handler` is the stable version. They both contain the features and suport the configuration below but on the Souin repository you'll get access to new features/RFCs at early stage with faster bug fixes.
+`github.com/HobMartin/souin/plugin/caddy` and `github.com/caddyserver/cache-handler` are mainly the same but the `souin/plugin/caddy` is the development repository and the `cache-handler` is the stable version. They both contain the features and suport the configuration below but on the Souin repository you'll get access to new features/RFCs at early stage with faster bug fixes.
 {{% /alert %}}
 
 ## Usage
@@ -17,7 +17,7 @@ tags = ["Beginners", "Advanced"]
 We assume that you already installed the `xcaddy` binary on your device. If not, you can refer to the [documentation here](https://github.com/caddyserver/xcaddy#install)
 
 ```shell
-xcaddy build --with github.com/darkweak/souin/plugins/caddy
+xcaddy build --with github.com/HobMartin/souin/plugins/caddy
 ```
 
 You should get a new `caddy` executable file in your current directory.

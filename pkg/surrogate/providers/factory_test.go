@@ -3,8 +3,8 @@ package providers
 import (
 	"testing"
 
-	"github.com/darkweak/souin/errors"
-	"github.com/darkweak/souin/plugins/souin/configuration"
+	"github.com/HobMartin/souin/errors"
+	"github.com/HobMartin/souin/plugins/souin/configuration"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

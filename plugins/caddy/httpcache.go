@@ -11,11 +11,11 @@ import (
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/darkweak/souin/configurationtypes"
-	"github.com/darkweak/souin/pkg/middleware"
-	"github.com/darkweak/souin/pkg/storage"
-	"github.com/darkweak/souin/pkg/storage/types"
-	surrogates_providers "github.com/darkweak/souin/pkg/surrogate/providers"
+	"github.com/HobMartin/souin/configurationtypes"
+	"github.com/HobMartin/souin/pkg/middleware"
+	"github.com/HobMartin/souin/pkg/storage"
+	"github.com/HobMartin/souin/pkg/storage/types"
+	surrogates_providers "github.com/HobMartin/souin/pkg/surrogate/providers"
 	"go.uber.org/zap"
 )
 

@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/darkweak/go-esi/esi"
-	"github.com/darkweak/souin/pkg/rfc"
+	"github.com/HobMartin/souin/pkg/rfc"
 )
 
 type SouinWriterInterface interface {

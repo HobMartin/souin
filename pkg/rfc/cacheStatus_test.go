@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	souinCtx "github.com/darkweak/souin/context"
-	"github.com/darkweak/souin/errors"
+	souinCtx "github.com/HobMartin/souin/context"
+	"github.com/HobMartin/souin/errors"
 	"github.com/pquerna/cachecontrol/cacheobject"
 )
 
